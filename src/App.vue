@@ -8,11 +8,15 @@
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
+import VConsole from "vconsole";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
+  },
+  mounted(){
+    new VConsole();
   },
   methods: {
     checkEthereum() {
