@@ -13,7 +13,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 import VConsole from "vconsole";
 import Onboard from "bnc-onboard";
 import Web3 from "web3";
-import ethers from "ethers"
+import { ethers } from "ethers";
 
 export default {
   name: "App",
@@ -26,7 +26,7 @@ export default {
   methods: {
     checkEthereum() {
       console.log("window.ethereum", window.ethereum);
-      console.log('ethers', ethers.utils.parseEther('1'))
+      console.log("ethers", ethers.utils.parseEther("1"));
     },
     connetWallet() {
       // set a variable to store instantiated web3
@@ -51,7 +51,7 @@ export default {
         },
       });
 
-      console.log('web3', web3)
+      console.log("web3", web3);
 
       // Prompt user to select a wallet
       onboard
