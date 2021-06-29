@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <img alt="Vue logo" src="./assets/logo.png" />
     <button @click="checkEthereum">Click me!</button>
     <button @click="connetWallet">Connect Wallet!</button>
@@ -22,6 +22,7 @@ export default {
   },
   mounted() {
     new VConsole();
+    console.log("routes", this.$route);
   },
   methods: {
     checkEthereum() {
