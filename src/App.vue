@@ -51,6 +51,8 @@ export default {
         },
       });
 
+      console.log('web3', web3)
+
       // Prompt user to select a wallet
       onboard
         .walletSelect()
@@ -63,7 +65,7 @@ export default {
           console.log("wallet connected");
         })
         .catch((e) => {
-          console.error("");
+          console.error("error connecting", e);
         });
     },
   },
