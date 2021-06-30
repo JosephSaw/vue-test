@@ -23,6 +23,7 @@ export default {
   mounted() {
     new VConsole();
     console.log("routes", this.$route);
+    console.log("store", this.$store)
   },
   methods: {
     checkEthereum() {
