@@ -27,7 +27,7 @@ const router = new VueRouter({
   routes,
 })
 
-const store = new Vuex.store({
+const store = new Vuex.Store({
   state: { test: 'hello world' },
   mutations: {},
   actions: {},
